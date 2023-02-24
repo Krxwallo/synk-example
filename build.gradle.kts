@@ -13,7 +13,6 @@ group = "io.github.krxwallo"
 version = "1.0.0"
 
 repositories {
-    mavenLocal()
     mavenCentral()
     google()
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
@@ -46,7 +45,7 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0-RC")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
-                implementation("io.github.krxwallo:synk:1.0.0")
+                implementation("com.github.krxwallo.synk:synk:1.0.0")
                 implementation("ch.qos.logback:logback-classic:1.4.5")
                 implementation(compose.runtime)
             }
